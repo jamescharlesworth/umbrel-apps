@@ -13,9 +13,8 @@ website: https://j5s.dev
 port: 3002
 repo: https://github.com/jamescharlesworth/react-typescript-template
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
+  - https://getumbrel.github.io/umbrel-apps-gallery/bitcoin/1.jpg
+dependencies:
 path: ""
 defaultUsername: ""
 defaultPassword: ""
