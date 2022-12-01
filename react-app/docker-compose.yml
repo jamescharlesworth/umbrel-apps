@@ -7,7 +7,7 @@ services:
       APP_PORT: 3002
 
   web:
-    image: jamescharlesworth/react-my-app:v0.0.1
+    image: jamescharlesworth/react-my-app:v0.0.2
     restart: on-failure
     stop_grace_period: 1m
     environment:
