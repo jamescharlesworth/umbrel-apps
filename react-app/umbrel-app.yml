@@ -14,7 +14,7 @@ port: 3002
 repo: https://github.com/jamescharlesworth/react-typescript-template
 gallery:
   - https://getumbrel.github.io/umbrel-apps-gallery/bitcoin/1.jpg
-dependencies:
+dependencies: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
