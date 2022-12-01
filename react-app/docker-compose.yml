@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: react-app_web_1
+      APP_PORT: 3002
+
+  web:
+    image: jamescharlesworth/react-my-app:v0.0.
+    restart: on-failure
+    stop_grace_period: 1m
+    environment:
+      PORT: 3002

@@ -1,0 +1,16 @@
+manifestVersion: 1
+id: react-app
+category: Development
+name: React App
+version: "0.0.1"
+tagline: Simple react app
+description: >-
+  POC
+releaseNotes: >-
+  foobar
+developer: James Charlesworth
+website: https://j5s.dev
+port: 3002
+path: ""
+defaultUsername: ""
+defaultPassword: ""
