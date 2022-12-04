@@ -13,16 +13,16 @@ services:
     environment:
       PORT: 3002
       MONGODB_URI: "mongodb://${APP_REACT_DATABASE_IP}:27017/reactapp"
-mongodb:
-    # Newer mongo versions don't support Raspberry Pi 4 arm64
-    image: mongo:4.4.6-bionic@sha256:3d0e6df9fd5bc42cbf8ef8bc9e6c4e78f6f26c7157dbd7bdec72d202ab8ebe3a
-    user: 1000:1000
-    restart: on-failure
-    stop_grace_period: 1m
-    volumes:
-      - ${APP_DATA_DIR}/data/db:/data/db
-      - ${APP_DATA_DIR}/data/db/diagnostic.data:/data/db/diagnostic.data
-      - ${APP_DATA_DIR}/data/db/journal:/data/db/journal
-    networks:
-      default:
-        ipv4_address: $APP_REACT_DATABASE_IP
+  mongodb:
+      # Newer mongo versions don't support Raspberry Pi 4 arm64
+      image: mongo:4.4.6-bionic@sha256:3d0e6df9fd5bc42cbf8ef8bc9e6c4e78f6f26c7157dbd7bdec72d202ab8ebe3a
+      user: 1000:1000
+      restart: on-failure
+      stop_grace_period: 1m
+      volumes:
+        - ${APP_DATA_DIR}/data/db:/data/db
+        - ${APP_DATA_DIR}/data/db/diagnostic.data:/data/db/diagnostic.data
+        - ${APP_DATA_DIR}/data/db/journal:/data/db/journal
+      networks:
+        default:
+          ipv4_address: $APP_REACT_DATABASE_IP
