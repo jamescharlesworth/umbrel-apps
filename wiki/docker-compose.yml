@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: wiki_web_1
-      APP_PORT: 3022
+      APP_PORT: 3023
   db:
     image: postgres:11-alpine
     environment:
