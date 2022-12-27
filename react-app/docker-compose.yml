@@ -32,7 +32,7 @@ services:
     ports:
       - "3023:3000"
   web:
-    image: jamescharlesworth/react-my-app:v0.0.2
+    image: jamescharlesworth/react-my-app:v0.0.3
     restart: on-failure
     stop_grace_period: 1m
     environment:
