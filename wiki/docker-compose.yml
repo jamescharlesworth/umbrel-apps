@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: wiki_web_1
-      APP_PORT: 3023
+      APP_PORT: 3043
   db:
     image: postgres:11-alpine
     environment:
@@ -29,7 +29,7 @@ services:
       DB_NAME: wiki
     restart: unless-stopped
     ports:
-      - "3023:3000"
+      - "3035:3000"
 
 volumes:
   db-data:
