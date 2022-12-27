@@ -10,7 +10,7 @@ releaseNotes: >-
   foobar
 developer: James Charlesworth
 website: https://j5s.dev
-port: 3023
+port: 3022
 repo: https://github.com/jamescharlesworth/react-typescript-template
 gallery:
   - https://getumbrel.github.io/umbrel-apps-gallery/bitcoin/1.jpg
